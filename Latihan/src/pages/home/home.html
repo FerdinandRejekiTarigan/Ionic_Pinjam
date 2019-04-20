@@ -1,26 +1,22 @@
 <ion-header>
-    <ion-navbar>
-      <ion-title position="center"> <h1>PinJam Dana</h1></ion-title>
+    <ion-navbar color="primary">
+      <ion-title position="center">
+        <h1>PinJam Dana</h1>
+      </ion-title>
       <button ion-button menuToggle>
         <ion-icon name="menu"></ion-icon>
       </button>
+    </ion-navbar>
 
     <!-- <ion-buttons end>
         <button ion-button (click)="hapusSemuaDataPinjaman()">
-         
         </button>
-      </ion-buttons> -->
+    </ion-buttons> -->
 
-
-    </ion-navbar>
-  </ion-header>
-  
-  <ion-content padding>
-
-   
-  
-    <!-- <ion-card *ngFor="let item of listDataPinjaman">
-        <ion-item>
+</ion-header>
+  <ion-content>
+        <!-- <ion-card *ngFor="let item of listDataPinjaman">
+          <ion-item>
             <span item-left> {{item.nohp |uppercase}}</span>
             <button ion-button icon-left clear item-end color="danger" (click)="hapusDataPinjaman(item)">
               <ion-icon name="trash"></ion-icon>
@@ -29,15 +25,11 @@
         </ion-card> -->
 
         <!-- <ion-card *ngFor="let item of listProfil">
-            <ion-item>
-                <span item-left> {{item.namalengkap |uppercase}}</span>
-                <button ion-button icon-left clear item-end color="danger" (click)="hapusDataProfil(item)">
-                  <ion-icon name="trash"></ion-icon>
-                </button>
-              </ion-item>
-            </ion-card> -->
-
-
-
-      </ion-content>
-        
+          <ion-item>
+            <span item-left> {{item.namalengkap |uppercase}}</span>
+            <button ion-button icon-left clear item-end color="danger" (click)="hapusDataProfil(item)">
+              <ion-icon name="trash"></ion-icon>
+            </button>
+          </ion-item>
+        </ion-card> -->
+  </ion-content>
