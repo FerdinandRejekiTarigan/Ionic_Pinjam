@@ -1,9 +1,11 @@
 <ion-header>
-    <ion-navbar>
-      <ion-title position="center"> <h1>PinJam Dana</h1></ion-title>
-      <button ion-button menuToggle>
-        <ion-icon name="menu"></ion-icon>
-      </button>
+  <ion-navbar>
+    <ion-title position="center">
+      <h1>PinJam Dana</h1>
+    </ion-title>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
 
     <!-- <ion-buttons end>
         <button ion-button (click)="hapusSemuaDataPinjaman()">
@@ -12,14 +14,17 @@
       </ion-buttons> -->
 
 
-    </ion-navbar>
-  </ion-header>
-  
-  <ion-content padding>
+  </ion-navbar>
+</ion-header>
 
-   
-  
-    <!-- <ion-card *ngFor="let item of listDataPinjaman">
+<ion-content padding>
+  <ion-item>
+    <img src="assets/imgs/pinjaman.jpg">
+  </ion-item>
+
+
+
+  <!-- <ion-card *ngFor="let item of listDataPinjaman">
         <ion-item>
             <span item-left> {{item.nohp |uppercase}}</span>
             <button ion-button icon-left clear item-end color="danger" (click)="hapusDataPinjaman(item)">
@@ -28,7 +33,7 @@
           </ion-item>
         </ion-card> -->
 
-        <!-- <ion-card *ngFor="let item of listProfil">
+  <!-- <ion-card *ngFor="let item of listProfil">
             <ion-item>
                 <span item-left> {{item.namalengkap |uppercase}}</span>
                 <button ion-button icon-left clear item-end color="danger" (click)="hapusDataProfil(item)">
@@ -39,5 +44,4 @@
 
 
 
-      </ion-content>
-        
+</ion-content>
