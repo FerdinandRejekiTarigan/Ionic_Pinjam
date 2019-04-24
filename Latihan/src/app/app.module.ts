@@ -20,8 +20,8 @@ import { PembayaranPage } from '../pages/pembayaran/pembayaran';
     ProfilPage,
     RiwayatPinjamanPage,
     PembayaranPage
-    
   ],
+  
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
@@ -35,7 +35,6 @@ import { PembayaranPage } from '../pages/pembayaran/pembayaran';
     ProfilPage,
     RiwayatPinjamanPage,
     PembayaranPage
-    
   ],
   providers: [
     StatusBar,
