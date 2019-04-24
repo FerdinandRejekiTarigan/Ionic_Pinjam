@@ -24,9 +24,7 @@ export class RiwayatPinjamanPage {
   transfer: any = null;
   norek: any = null;
   nohp: any = null;
-  // tanggalPeminjaman: any = null;
-  // tanggalPengembalian: any = null;
-
+ 
 
   constructor(
     public navCtrl: NavController, public navParams: NavParams,
@@ -67,9 +65,7 @@ export class RiwayatPinjamanPage {
       lamapinjaman: this.lamapinjaman,
       transfer: this.transfer,
       norek: this.norek,
-      //nohp: this.nohp
-      // tanggalPeminjaman: this.tanggalPeminjaman,
-      // tanggalPengembalian: this.tanggalPengembalian
+      
     }
     
 

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams} from 'ionic-angular';
 import { Storage } from '@ionic/storage';
-//import { Response } from '@angular/http';
+
 
 
 //import { RiwayatPinjamanPage } from '../riwayat-pinjaman/riwayat-pinjaman';
@@ -26,9 +26,7 @@ export class TambahPinjamanPage {
   lamapinjaman: any = null;
   transfer: any = null;
   norek: any = null;
-  //nohp: any = null;
-  // tanggalPeminjaman: any = null;
-  // tanggalPengembalian: any = null;
+  
 
 
   constructor(
@@ -69,9 +67,7 @@ export class TambahPinjamanPage {
       lamapinjaman: this.lamapinjaman,
       transfer: this.transfer,
       norek: this.norek,
-      //nohp: this.nohp
-      // tanggalPeminjaman: this.tanggalPeminjaman,
-      // tanggalPengembalian: this.tanggalPengembalian
+      
     }
     
 

@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Storage } from '@ionic/storage';
-//import { RiwayatPinjamanPage } from '../riwayat-pinjaman/riwayat-pinjaman';
-//import { HomePage } from '../home/home';
 const KEY_DATA_PROFIL = "dataProfil";
 
 /**
