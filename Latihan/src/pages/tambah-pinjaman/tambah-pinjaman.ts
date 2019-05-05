@@ -4,7 +4,7 @@ import { Storage } from '@ionic/storage';
 
 
 
-//import { RiwayatPinjamanPage } from '../riwayat-pinjaman/riwayat-pinjaman';
+import { RiwayatPinjamanPage } from '../riwayat-pinjaman/riwayat-pinjaman';
 //import { HomePage } from '../home/home';
 const KEY_DATA_PINJAMAN = "dataPinjaman";
 /**
@@ -74,7 +74,7 @@ export class TambahPinjamanPage {
     
     this.listDataPinjaman.push(tempData);
     this.storage.set(KEY_DATA_PINJAMAN, JSON.stringify(this.listDataPinjaman));
-    this.navCtrl.setRoot(TambahPinjamanPage);
+    this.navCtrl.setRoot(RiwayatPinjamanPage);
   }
   hapusDataPinjaman(item) {
     var temp = this.listDataPinjaman.indexOf(item);

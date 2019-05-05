@@ -6,7 +6,7 @@
 -->
 <ion-header>
   <ion-navbar color="primary">
-    <ion-title><h1>Bayar Cicilan</h1></ion-title>
+    <ion-title><h1>Angsuran Pinjaman</h1></ion-title>
       <button ion-button menuToggle>
         <ion-icon ios="ios-home" md="md-home"></ion-icon>
       </button>
@@ -73,7 +73,7 @@
 
   <ion-card *ngFor="let item of listPembayaran">
     <ion-item>
-      <span item-left> {{item.cicilanke |uppercase}}</span>
+      <span item-left><h2>Cicilan Ke:</h2> {{item.cicilanke |uppercase}}</span>
         <button ion-button icon-left clear item-end color="danger" (click)="hapusDataPembayaran(item)">
           <ion-icon name="trash"></ion-icon>
         </button>

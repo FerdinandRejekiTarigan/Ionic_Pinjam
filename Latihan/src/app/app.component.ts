@@ -33,7 +33,7 @@ export class MyApp {
       { title: 'Ajukan Pinjaman', component: TambahPinjamanPage, icon: 'logo-usd' },
       { title: 'Profil', component: ProfilPage, icon:'people' },
       { title: 'Riwayat Pinjaman', component: RiwayatPinjamanPage, icon: 'md-paper' },
-      { title: 'Pembayaran', component: PembayaranPage, icon: 'md-filing' }
+      { title: 'Angsuran Pinjaman', component: PembayaranPage, icon: 'md-filing' }
     ];
 
     platform.ready().then(() => {

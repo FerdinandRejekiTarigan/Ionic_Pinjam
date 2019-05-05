@@ -23,7 +23,7 @@ export class RiwayatPinjamanPage {
   lamapinjaman: any = null;
   transfer: any = null;
   norek: any = null;
-  nohp: any = null;
+ 
  
 
   constructor(
@@ -37,7 +37,7 @@ export class RiwayatPinjamanPage {
          console.log('Your name is', val);
        });
 
-      //this.ambilDataPinjaman();
+      this.ambilDataPinjaman();
   }
 
   ambilDataPinjaman() {
@@ -50,40 +50,16 @@ export class RiwayatPinjamanPage {
         console.log('empty');
       }
     })
-    this.ambilDataPinjaman();
-    this.storage.set(KEY_DATA_PINJAMAN, JSON.stringify(this.listDataPinjaman));
-    this.navCtrl.setRoot(RiwayatPinjamanPage);
   }
 
-  
-
-
-
-  simpanData() {//json in stringfy
-    var tempData = {
-      IDR: this.IDR,
-      lamapinjaman: this.lamapinjaman,
-      transfer: this.transfer,
-      norek: this.norek,
-      
-    }
-    
-
-
-    this.listDataPinjaman.push(tempData);
-    this.storage.set(KEY_DATA_PINJAMAN, JSON.stringify(this.listDataPinjaman));
-    this.navCtrl.setRoot(RiwayatPinjamanPage);
-  }
+ 
   hapusDataPinjaman(item) {
     var temp = this.listDataPinjaman.indexOf(item);
     this.listDataPinjaman.splice(temp, 1);
     this.storage.set(KEY_DATA_PINJAMAN, JSON.stringify(this.listDataPinjaman));
   }
 
-  hapusSemuaDataPinjaman() {
-    this.storage.remove(KEY_DATA_PINJAMAN);
-    this.listDataPinjaman = [];
-  }
+ 
 
 
   ionViewDidLoad() {
