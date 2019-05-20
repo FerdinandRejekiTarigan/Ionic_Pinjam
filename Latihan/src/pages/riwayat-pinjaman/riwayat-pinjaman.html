@@ -23,6 +23,7 @@
       <ion-card *ngFor="let item of listDataPinjaman">
         <ion-item>
           <span item-left><h2>NO Rekening</h2> {{item.norek|uppercase}}</span>
+          
             <button ion-button icon-left clear item-end color="danger" (click)="hapusDataPinjaman(item)">
               <ion-icon name="trash"></ion-icon>
             </button>
